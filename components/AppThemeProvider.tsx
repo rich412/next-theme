@@ -50,7 +50,7 @@ const AppThemeProvider: React.FC<ProviderI> = ({ children }) => {
     palette: {
       mode: currentTheme,
       primary: {
-        main: "#ff3478",
+        main: currentTheme === "light" ? "#ff3478" : "#0152cc",
       },
     },
   });
